@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="pwO-Vg-mLL" customClass="CZThirdView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="third_2" translatesAutoresizingMaskIntoConstraints="NO" id="DQD-4T-BFd">
+                    <rect key="frame" x="64" y="271" width="246" height="190"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="third_1" translatesAutoresizingMaskIntoConstraints="NO" id="T7b-Pl-gBh">
+                    <rect key="frame" x="64" y="64" width="246" height="257"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="third_3" translatesAutoresizingMaskIntoConstraints="NO" id="WcW-Xg-eas">
+                    <rect key="frame" x="194" y="243" width="159" height="204"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUc-Wh-iQt">
+                    <rect key="frame" x="137.5" y="502" width="99" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qM2-KA-2fq">
+                    <rect key="frame" x="136.5" y="539" width="103" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qM2-KA-2fq" firstAttribute="top" secondItem="sUc-Wh-iQt" secondAttribute="bottom" constant="10" id="7Vd-Hj-h3A"/>
+                <constraint firstItem="WcW-Xg-eas" firstAttribute="centerX" secondItem="pwO-Vg-mLL" secondAttribute="centerX" constant="86" id="9CA-l2-5wQ"/>
+                <constraint firstAttribute="bottom" secondItem="sUc-Wh-iQt" secondAttribute="bottom" constant="138" id="V1r-p7-uLp"/>
+                <constraint firstItem="DQD-4T-BFd" firstAttribute="top" secondItem="T7b-Pl-gBh" secondAttribute="bottom" constant="-50" id="d1R-CV-Zbj"/>
+                <constraint firstItem="qM2-KA-2fq" firstAttribute="centerX" secondItem="pwO-Vg-mLL" secondAttribute="centerX" id="jXn-nI-VQa"/>
+                <constraint firstItem="T7b-Pl-gBh" firstAttribute="centerX" secondItem="pwO-Vg-mLL" secondAttribute="centerX" id="oBJ-3I-iKr"/>
+                <constraint firstItem="WcW-Xg-eas" firstAttribute="top" secondItem="pwO-Vg-mLL" secondAttribute="top" constant="243" id="pSl-Xa-9ga"/>
+                <constraint firstItem="DQD-4T-BFd" firstAttribute="centerX" secondItem="pwO-Vg-mLL" secondAttribute="centerX" id="weK-Tp-69S"/>
+                <constraint firstItem="sUc-Wh-iQt" firstAttribute="centerX" secondItem="pwO-Vg-mLL" secondAttribute="centerX" id="x5A-xf-1dy"/>
+                <constraint firstItem="T7b-Pl-gBh" firstAttribute="top" secondItem="pwO-Vg-mLL" secondAttribute="top" constant="64" id="zV0-ct-fiz"/>
+            </constraints>
+            <connections>
+                <outlet property="image1" destination="T7b-Pl-gBh" id="Pr1-OG-8gw"/>
+                <outlet property="image2" destination="DQD-4T-BFd" id="2VI-04-6lX"/>
+                <outlet property="image3" destination="WcW-Xg-eas" id="0vQ-Sd-Exx"/>
+                <outlet property="subTitleView" destination="qM2-KA-2fq" id="bwj-Lh-CkV"/>
+                <outlet property="titleView" destination="sUc-Wh-iQt" id="pDl-SE-tS0"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="third_1" width="246" height="257"/>
+        <image name="third_2" width="246" height="190"/>
+        <image name="third_3" width="159" height="204"/>
+    </resources>
+</document>
