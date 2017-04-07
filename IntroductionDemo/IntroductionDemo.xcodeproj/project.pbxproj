@@ -244,7 +244,8 @@
 				TargetAttributes = {
 					D5EBE3B01E979422003BBDC8 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = RZG7Q2FUU4;
+						ProvisioningStyle = Manual;
 					};
 					D5EBE3C91E979422003BBDC8 = {
 						CreatedOnToolsVersion = 8.1;
@@ -460,11 +461,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RZG7Q2FUU4;
 				INFOPLIST_FILE = IntroductionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CZ.IntroductionDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.introduction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "25d100ba-de4a-4a74-a47b-66f108b8ae0c";
+				PROVISIONING_PROFILE_SPECIFIER = develop;
 			};
 			name = Debug;
 		};
@@ -472,10 +476,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IntroductionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CZ.IntroductionDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.introduction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -545,6 +550,7 @@
 				D5EBE3E01E979422003BBDC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5EBE3E11E979422003BBDC8 /* Build configuration list for PBXNativeTarget "IntroductionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +559,7 @@
 				D5EBE3E31E979422003BBDC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5EBE3E41E979422003BBDC8 /* Build configuration list for PBXNativeTarget "IntroductionDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +568,7 @@
 				D5EBE3E61E979422003BBDC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
